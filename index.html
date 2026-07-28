@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    }
+    .card-container img{
+        width: 300px;
+        object-fit: cover;
+        border: 1px solid;
+        border-radius: 5px;
+    
+    }
+    .content{
+        text-align: center;
+        border: 1px solid;
+        width: 300px;
+        
+        
+    }
+    .content button{
+        width: 100px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        padding: 10px 5px;
+        font-size: 1em;
+        border: none;
+        cursor: pointer;
+        margin-top: 5px;
+        background-color: rgba(0, 145, 255, 0.943);
+        color: #fff;
+    }
+    .content button:hover{
+        background-color: rgba(255, 255, 0, 0.868);
+        opacity: 0.8;
+    }
+    .content h3{
+        margin-top: 5px;
+    }
+    .content p{
+        width: 280px;
+    
+    }
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px  rgba(0, 0, 0, 0.2);
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+
+    }
+     
+</style>
+<body>
+    <div class="card-container">
+    <img src="./img/robot.jpg" alt="">
+    <div class="content">
+    <h3>Mekamon Gaming robot</h3>
+    <p>Meet the world's first intelligent gaming robot by reach robotics</p>
+    <button>Like me</button>
+    </div>
+        </div>
+
+    <script>
+        let score = 85;
+        let attendance = 92;
+        let hasDisciplinaryCase = false;
+
+        if(score >= 80 && attendance >= 90 && !hasDisciplinaryCase){
+            console.log('Scholarship Awarded');
+        }else if(score >= 70 && attendance >= 80){
+            console.log('Eligible for Review');
+        }else if(!hasDisciplinaryCase && attendance ){
+            console.log('Not eligible');
+        }else{
+            console.log('Better luck next time')
+        }
+    </script>
+    <script>
+        let jambScore = 198;
+        let postUtmeScore = 68;
+        let hasFiveCredits = true;
+        let awaitingResult = false;
+        let isIndigene = false;
+        
+        if(jambScore >=220 && postUtmeScore >= 60 &&       hasFiveCredits || awaitingResult){
+            console.log('offer Admission');
+        }else if(jambScore >= 200 && postUtmeScore >= 55 && hasFiveCredits ||isIndigene){
+            console.log('Admission on catchment');
+        }else if(jambScore >=200 && awaitingResult ){
+            console.log('Pending Application');
+        }else{
+            console.log('Not Eligible');
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;    
+    
+    }
+    .container{
+        
+        padding: 20px;
+        border: 1px solid;
+        
+    }
+
+#log p{
+    font-weight: bold;
+    font-size: 1em;
+} 
+
+.item{
+    margin-bottom: 10px;
+}
+.item input{
+    width:450px;
+    padding: 25px 20px;
+    border-radius: 10px;
+    border: 1px solid;
+}
+
+button{
+    width:480px ;
+    padding: 15px 5px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+.login{
+    background-color:rgba(0, 51, 255, 0.845) ;
+    color: #fff;
+}
+
+.fp:hover{
+    background-color:#fff ;
+    
+}
+
+.cna{
+    color: rgba(0, 0, 255, 0.792);
+    font-weight: bold;
+    font-size: 1em;
+    
+}
+
+
+
+
+
+
+.header img{
+    width: 100px;
+}
+
